@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Cycle Chrome Windows",
+  "version": "1.0",
+  "description": "Cycle through Chrome windows using a custom shortcut just like you used to do on your Mac",
+  "permissions": [ "tabs", "windows" ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "cycle_windows": {
+      "suggested_key": {
+        "default": "Alt+Q", // Set to Alt + Q
+        "mac": "Command+Shift+C"
+      },
+      "description": "Cycle through Chrome windows"
+    }
+  }
+}
